@@ -1,5 +1,5 @@
-const map1 = L.map('map1').setView([51.505, -0.09], 13);
-const map2 = L.map('map2').setView([51.505, -0.09], 13);
+const map1 = L.map('map1').setView([4.580117151176814, -74.15308284860983], 13);
+const map2 = L.map('map2').setView([4.580117151176814, -74.15308284860983], 13);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
