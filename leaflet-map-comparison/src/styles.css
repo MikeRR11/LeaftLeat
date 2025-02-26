@@ -1,32 +1,17 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-}
-
-#map-container {
+.leaflet-sbs-range {
+    position: absolute;
+    top: 50%;
     width: 100%;
-    height: 100%;
-    position: relative;
+    z-index: 999;
 }
-
-#map1, #map2 {
-    width: 100%;
-    height: 100%;
+.leaflet-sbs-divider {
     position: absolute;
     top: 0;
     bottom: 0;
-}
-
-.leaflet-container {
-    height: 100%;
-    width: 100%;
-}
-
-.geoman-control {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
+    left: 50%;
+    margin-left: -2px;
+    width: 4px;
+    background-color: #fff;
+    pointer-events: none;
+    z-index: 999;
 }
