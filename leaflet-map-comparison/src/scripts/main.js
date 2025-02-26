@@ -9,16 +9,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
 }).addTo(map2);
 
-const syncMaps = (event) => {
-    const { layer } = event;
-    if (layer) {
-        const geoJson = layer.toGeoJSON();
-        L.geoJSON(geoJson).addTo(map2);
-    }
-};
-
-map1.on('pm:create', syncMaps);
-map2.on('pm:create', syncMaps);
+map1.sync(map2);
+map2.sync(map1);
 
 map1.pm.addControls({
     position: 'topleft',
