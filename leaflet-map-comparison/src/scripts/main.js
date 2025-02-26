@@ -10,11 +10,6 @@ const layer2 = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', 
     subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
 }).addTo(map2);
 
-const layer3 = L.tileLayer('http://{s}.google.com/vt/lyrs=h&x={x}&y={y}&z={z}', {
-    maxZoom: 20,
-    subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
-}).addTo(map2);
-
 const sideBySide = L.control.sideBySide(layer1, layer2).addTo(map1);
 
 map1.pm.addControls({
