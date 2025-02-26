@@ -1,12 +1,18 @@
-const map1 = L.map('map1').setView([4.580117151176814, -74.15308284860983], 13);
-const map2 = L.map('map2').setView([4.580117151176814, -74.15308284860983], 13);
+const map1 = L.map('map1').setView([4.580117151176814, -74.15308284860983], 16);
+const map2 = L.map('map2').setView([4.580117151176814, -74.15308284860983], 16);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 20,
 }).addTo(map1);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+    maxZoom: 20,
+    subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+}).addTo(map2);
+
+L.tileLayer('http://{s}.google.com/vt/lyrs=h&x={x}&y={y}&z={z}', {
+    maxZoom: 20,
+    subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
 }).addTo(map2);
 
 map1.sync(map2);
