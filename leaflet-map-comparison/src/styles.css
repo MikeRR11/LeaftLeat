@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+#map1, #map2 {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+#divider {
+    width: 5px;
+    background-color: #ccc;
+    cursor: ew-resize;
+    height: 100%;
+}
+
+#map-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#map1 {
+    border-right: 5px solid #ccc;
+}
+
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+}
+
+.geoman-control {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
