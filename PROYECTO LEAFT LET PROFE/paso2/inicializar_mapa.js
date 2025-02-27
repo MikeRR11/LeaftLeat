@@ -25,5 +25,9 @@ map.on("pm:create", function(e){
     if(mylayer instanceof L.Polygon){
         drawlayers.push(mylayer);
     }
-
+    console.log("se creo un poligono");
+})
+map.on("pm:remove", function(e){
+    drawlayers = drawlayers.filter(layer => layer!=e.layer);
+    console.log("Se removio un poligono");
 })
