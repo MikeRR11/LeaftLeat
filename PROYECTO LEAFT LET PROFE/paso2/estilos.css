@@ -22,7 +22,7 @@
 .area_label {
     font-size: 14px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: black;
     padding: 2px 5px;
     border-radius: 3px;
     white-space: nowrap;
