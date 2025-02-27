@@ -21,9 +21,9 @@
 
 .area_label {
     font-size: 14px;
-    color: white;
+    color: black;
     font-weight: bold;
-    background-color: black;
+    background-color: white;
     padding: 5px 10px;
     border-radius: 5px;
     white-space: nowrap;
