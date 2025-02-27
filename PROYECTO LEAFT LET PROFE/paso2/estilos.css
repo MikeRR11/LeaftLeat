@@ -29,4 +29,5 @@
     white-space: nowrap;
     display: inline-block;
     max-width: none;
+    box-sizing: border-box;
 }
