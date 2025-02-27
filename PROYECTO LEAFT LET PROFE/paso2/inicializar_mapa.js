@@ -26,6 +26,7 @@ map.on("pm:create", function(e){
         drawlayers.push(mylayer);
     }
     console.log("se creo un poligono");
+    mylayer.addTo(map);
 })
 map.on("pm:remove", function(e){
     drawlayers = drawlayers.filter(layer => layer!=e.layer);

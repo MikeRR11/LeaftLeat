@@ -28,9 +28,14 @@
     <div id="map"></div>
     <button class="boton" id="centroid">Centroides</button>
     <button class="boton" id="centroid_distance">Distancia Centroides</button>
-    <button class="boton" id="area">Area</button>
+    <button class="boton" id="areas">Area</button>
     <button class="boton" id="intersections">Detectar Intersecciones</button>
 
+    <script src="inicializar_mapa.js"></script>
+    <script src="analistas.js"></script>
+    <script src="manejadores.js"></script>
+    <script>
+        document.getElementById('centroid').addEventListener('click', detecCentroids);
+    </script>
 </body>
-<script src="inicializar_mapa.js"></script>
 </html>
