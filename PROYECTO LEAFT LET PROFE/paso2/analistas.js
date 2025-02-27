@@ -6,7 +6,7 @@ function detecCentroids(){
                 console.log(centroid.geometry.coordinates);
 
         }catch(error){
-            console.log("No se puede calcular el centroide de un poligono sin area");
+            console.warn("No se puede calcular el centroide de un poligono sin area",error);
         }
     }
     )
