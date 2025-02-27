@@ -23,6 +23,5 @@
     font-size: 14px;
     color: white;
     background-color: black;
-    border-radius: 3px;
-    white-space: nowrap;
+    font-weight: bold;
 }
